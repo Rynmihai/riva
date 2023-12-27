@@ -1,1 +1,33 @@
 
+<html>
+<head>
+  <title>Welcome to my next job!</title>
+  <style>
+    @keyframes rainbow {
+      0% { color: red; }
+      14% { color: orange; }
+      28% { color: yellow; }
+      42% { color: green; }
+      57% { color: blue; }
+      71% { color: indigo; }
+      85% { color: violet; }
+      100% { color: red; }
+    }
+    
+    .animated-text {
+      animation: rainbow 6s infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my next job</h1>
+  <h2 class="animated-text">Congratulations!</h2>
+  
+  <script>
+    setTimeout(function() {
+      document.querySelector('.animated-text').textContent = 'You got the job!';
+      document.querySelector('.animated-text').style.animation = 'none';
+    }, 4000);
+  </script>
+</body>
+</html>
